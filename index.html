@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'">
+    <title>PLASMATIO</title>
+    <link rel="icon" type="image/png" href="assets/branding/plasmatio.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="pages/directory.js" defer></script>
+    <script src="pages/welcome.js" defer></script>
+    <script src="pages/home.js" defer></script>
+    <script src="pages/forge.js" defer></script>
+    <script src="pages/office.js" defer></script>
+    <script src="pages/arena.js" defer></script>
+    <script src="pages/settings.js" defer></script>
+    <script src="layer-engine.js" defer></script>
+    <script src="heptagon.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main id="app" aria-label="PLASMATIO">
+      <section class="screen" id="screen" aria-label="Welcome">
+        <div id="page-layer"></div>
+      </section>
+      <div class="window-drag" aria-hidden="true"></div>
+      <div class="window-controls" role="group" aria-label="Window controls">
+        <button class="window-control" data-window="minimize" aria-label="Minimize window"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6.5h10"/></svg></button>
+        <button class="window-control" data-window="maximize" aria-label="Maximize window"><svg class="maximize-symbol" viewBox="0 0 12 12" aria-hidden="true"><rect x="1.5" y="1.5" width="9" height="9"/></svg><svg class="restore-symbol" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 3V1.5h6.5V8H9"/><rect x="1.5" y="3.5" width="7" height="7"/></svg></button>
+        <button class="window-control close-control" data-window="close" aria-label="Close window"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m1.5 1.5 9 9m0-9-9 9"/></svg></button>
+      </div>
+    </main>
+  </body>
+</html>
